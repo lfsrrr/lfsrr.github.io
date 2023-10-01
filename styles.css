@@ -102,3 +102,17 @@ body.dark-mode {
 .dark-mode .gluecksfarbe-anzeige {
     color: #ff69b4; /* Farbe für den "Glücksfarbe:"-Text im Dark Mode */
 }
+
+.impressum-toggle h2 {
+    cursor: pointer;
+}
+
+#impressum.collapsed {
+    display: none;
+}
+
+/* Stil für den aufgeklappten Zustand */
+#impressum:not(.collapsed) {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}

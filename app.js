@@ -42,3 +42,12 @@ function toggleDarkMode() {
     const body = document.body;
     body.classList.toggle('dark-mode');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const impressumToggle = document.querySelector('.impressum-toggle');
+
+    impressumToggle.addEventListener('click', function() {
+        const impressum = document.getElementById('impressum');
+        impressum.classList.toggle('collapsed');
+    });
+});
