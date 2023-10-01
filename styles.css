@@ -79,3 +79,21 @@ select {
     border-radius: 50%;
     border: 2px solid #ccc;
 }
+
+body.dark-mode {
+    background-color: #333; /* Dunkler Hintergrund */
+    color: #fff; /* Weiße Schrift */
+}
+
+.dark-mode select {
+    background-color: #555; /* Dunkleres Dropdown-Menü */
+    color: #fff;
+}
+
+.dark-mode .horoskop-entry {
+    border-color: #555; /* Dunklerer Rahmen */
+}
+
+.dark-mode .gluecksfarbe {
+    border-color: #555; /* Dunklerer Rahmen für die Glücksfarbe */
+}

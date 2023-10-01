@@ -2,6 +2,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const sternzeichenSelect = document.getElementById('sternzeichen');
     const horoskopContainer = document.getElementById('horoskop-output');
     const sternzeichenTitel = document.getElementById('sternzeichen-titel');
+    const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+    
+        darkModeCheckbox.addEventListener('change', function() {
+            toggleDarkMode();
+        });
+    });
+    
+
+
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+    }
 
     sternzeichenSelect.addEventListener('change', function() {
         const ausgewaehltesSternzeichen = this.value;
@@ -25,4 +38,3 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
     });
-});
