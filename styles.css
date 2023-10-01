@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center;
     background-color: #f5f5f5;
+    color: #333; /* Standard-Schriftfarbe */
 }
 
 label, select {
@@ -60,11 +61,11 @@ select {
     color: #ff69b4;
 }
 
-/* Stil für die Anzeige der Glücksfarbe */
 .gluecksfarbe-anzeige {
     font-weight: bold;
     display: inline-block;
     margin-top: 5px;
+    color: #ff69b4; /* Farbe für den "Glücksfarbe:"-Text */
 }
 
 .gluecksfarbe-anzeige::before {
@@ -81,19 +82,23 @@ select {
 }
 
 body.dark-mode {
-    background-color: #333; /* Dunkler Hintergrund */
-    color: #fff; /* Weiße Schrift */
+    background-color: #555;
+    color: #000000; /* Weiße Schriftfarbe im Dark Mode */
 }
 
 .dark-mode select {
-    background-color: #555; /* Dunkleres Dropdown-Menü */
-    color: #fff;
+    background-color: #555;
+    color: #000000;
 }
 
 .dark-mode .horoskop-entry {
-    border-color: #555; /* Dunklerer Rahmen */
+    border-color: #555;
 }
 
 .dark-mode .gluecksfarbe {
-    border-color: #555; /* Dunklerer Rahmen für die Glücksfarbe */
+    border-color: #555;
+}
+
+.dark-mode .gluecksfarbe-anzeige {
+    color: #ff69b4; /* Farbe für den "Glücksfarbe:"-Text im Dark Mode */
 }
