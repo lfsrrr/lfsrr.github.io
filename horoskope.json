@@ -1,0 +1,76 @@
+{
+  "Horoskope": [
+    {
+      "Sternzeichen": "Widder",
+      "Prognose": "Du wirst heute voller Energie sein. Nutze diese Kraft, um deine Ziele zu verfolgen.",
+      "Glückszahl": 7,
+      "Glücksfarbe": "#FF0000"
+    },
+    {
+      "Sternzeichen": "Stier",
+      "Prognose": "Es ist Zeit, sich um deine finanzielle Situation zu kümmern. Überlege, wie du sparen und investieren kannst.",
+      "Glückszahl": 5,
+      "Glücksfarbe": "#008000"
+    },
+    {
+      "Sternzeichen": "Zwillinge",
+      "Prognose": "Heute könnten überraschende Nachrichten auf dich warten. Bleibe offen für Veränderungen.",
+      "Glückszahl": 9,
+      "Glücksfarbe": "#000080"
+    },
+    {
+      "Sternzeichen": "Krebs",
+      "Prognose": "Es ist an der Zeit, sich um deine zwischenmenschlichen Beziehungen zu kümmern. Zeige deinen Liebsten, wie wichtig sie für dich sind.",
+      "Glückszahl": 3,
+      "Glücksfarbe": "#C0C0C0"
+    },
+    {
+      "Sternzeichen": "Löwe",
+      "Prognose": "Du wirst heute in deinem Element sein und viel Aufmerksamkeit bekommen. Nutze diese Energie, um positive Veränderungen herbeizuführen.",
+      "Glückszahl": 8,
+      "Glücksfarbe": "#FFA500"
+    },
+    {
+      "Sternzeichen": "Jungfrau",
+      "Prognose": "Nimm dir Zeit für dich selbst und reflektiere über deine Ziele. Eine klare Vision wird dir helfen, deine Träume zu verwirklichen.",
+      "Glückszahl": 4,
+      "Glücksfarbe": "#FFFF00"
+    },
+    {
+      "Sternzeichen": "Waage",
+      "Prognose": "Es könnte heute zu unerwarteten Herausforderungen kommen. Bleibe ruhig und finde kreative Lösungen.",
+      "Glückszahl": 6,
+      "Glücksfarbe": "#FFC0CB"
+    },
+    {
+      "Sternzeichen": "Skorpion",
+      "Prognose": "Heute ist ein guter Tag, um neue Dinge auszuprobieren. Sei mutig und wage den ersten Schritt.",
+      "Glückszahl": 2,
+      "Glücksfarbe": "#800080"
+    },
+    {
+      "Sternzeichen": "Schütze",
+      "Prognose": "Du könntest heute eine inspirierende Begegnung haben, die deine Sichtweise verändert. Sei offen für neue Perspektiven.",
+      "Glückszahl": 1,
+      "Glücksfarbe": "#FF00FF"
+    },
+    {
+      "Sternzeichen": "Steinbock",
+      "Prognose": "Setze klare Ziele für dich und arbeite diszipliniert daran. Du wirst belohnt werden.",
+      "Glückszahl": 10,
+      "Glücksfarbe": "#A52A2A"
+    },
+    {
+      "Sternzeichen": "Wassermann",
+      "Prognose": "Du könntest heute auf unerwartete Weise kreativ werden. Lass deiner Fantasie freien Lauf.",
+      "Glückszahl": 11,
+      "Glücksfarbe": "#000000"
+    },
+    {
+      "Sternzeichen": "Fische",
+      "Prognose": "Sei aufmerksam für die Bedürfnisse anderer und zeige Mitgefühl. Deine Hilfe wird geschätzt.",
+      "Glückszahl": 12,
+      "Glücksfarbe": "#FFFFFF"
+    }
+  ]
+}

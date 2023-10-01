@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-<title>Louis Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoskop-Anzeige</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <label for="sternzeichen">Sternzeichen auswählen:</label>
+    <select id="sternzeichen">
+        <option value="Widder">Widder</option>
+        <option value="Stier">Stier</option>
+        <option value="Zwillinge">Zwillinge</option>
+        <option value="Krebs">Krebs</option>
+        <option value="Löwe">Löwe</option>
+        <option value="Jungfrau">Jungfrau</option>
+        <option value="Waage">Waage</option>
+        <option value="Skorpion">Skorpion</option>
+        <option value="Schütze">Schütze</option>
+        <option value="Steinbock">Steinbock</option>
+        <option value="Wassermann">Wassermann</option>
+        <option value="Fische">Fische</option>
+    </select>
 
-<h1>Hello my name is </h1>
-<p>Louis.</p>
+    <div id="horoskop-container">
+        <h1 id="sternzeichen-titel"></h1>
+        <div id="horoskop-output"></div>
+    </div>
 
+
+    <script src="app.js"></script>
 </body>
 </html>
-
