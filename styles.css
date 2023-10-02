@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center;
     background-color: #f5f5f5;
-    color: #333; /* Standard-Schriftfarbe */
+    color: #1a1818; /* Standard-Schriftfarbe */
 }
 
 label, select {
@@ -21,7 +21,7 @@ label, select {
 
 h1 {
     font-size: 1.8em;
-    color: #ff69b4;
+    color: #db1f7d;
 }
 
 select {
@@ -72,23 +72,15 @@ select {
     content: "Glücksfarbe: ";
 }
 
-.gluecksfarbe {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    margin-left: 10px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-}
-
+/* Darkmode */
 body.dark-mode {
     background-color: #555;
-    color: #000000; /* Weiße Schriftfarbe im Dark Mode */
+    color: #ffffff; /* Weiße Schriftfarbe im Dark Mode */
 }
 
 .dark-mode select {
     background-color: #555;
-    color: #000000;
+    color: #ffffff;
 }
 
 .dark-mode .horoskop-entry {
@@ -103,11 +95,28 @@ body.dark-mode {
     color: #ff69b4; /* Farbe für den "Glücksfarbe:"-Text im Dark Mode */
 }
 
-.impressum-toggle h2 {
+/* Für das Horoskopfeld im Darkmode */
+#horoscope {
+    background-color: #333; /* Hintergrundfarbe für den Darkmode */
+    color: #fff; /* Textfarbe für den Darkmode */
+}
+
+/* Für den Footer im Darkmode */
+footer {
+    background-color: #333; /* Hintergrundfarbe für den Darkmode */
+    color: #fff; /* Textfarbe für den Darkmode */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Macht den Titel klickbar und ändert den Mauszeiger zu einer Hand */
+.collapsible h2 {
     cursor: pointer;
 }
 
-#impressum.collapsed {
+/* Versteckt den Inhalt, wenn das Element als "collapsed" markiert ist */
+.collapsible div.collapsed {
     display: none;
 }
 
@@ -115,4 +124,122 @@ body.dark-mode {
 #impressum:not(.collapsed) {
     border-top: 1px solid #ccc;
     padding: 10px 0;
+}
+
+.collapsible {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.collapsible h2 {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Cookie-Banner */
+#cookie-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Hintergrundfarbe mit Transparenz */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#cookie-content {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+#accept-cookies {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#cookie-emoji {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Stelle sicher, dass der Footer am unteren Bildschirmrand klebt */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+body.dark-mode {
+    background-color: #555;
+    color: #ffffff; /* Weiße Schriftfarbe im Dark Mode */
+}
+
+.dark-mode select {
+    background-color: #555;
+    color: #ffffff;
+}
+
+.dark-mode .horoskop-entry {
+    border-color: #555;
+}
+
+.dark-mode .gluecksfarbe {
+    border-color: #555;
+}
+
+.dark-mode .gluecksfarbe-anzeige {
+    color: #ff69b4; /* Farbe für den "Glücksfarbe:"-Text im Dark Mode */
+}
+
+/* Für das Horoskopfeld */
+#horoscope {
+    border-radius: 10px;
+}
+
+/* Für den Footer */
+footer {
+    background-color: #333;
+    color: #1a1818;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.collapsible {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.collapsible h2 {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+    background-color: #ccc;
+    border-bottom: 1px solid #ff69b4;
+}
+
+.collapsible div.collapsed {
+    display: none;
+}
+
+.collapsible div {
+    padding: 10px; /* Hier kannst du den Abstand zum Inhalt anpassen */
 }

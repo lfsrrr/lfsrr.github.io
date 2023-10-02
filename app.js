@@ -44,10 +44,23 @@ function toggleDarkMode() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const impressumToggle = document.querySelector('.impressum-toggle');
+    const collapsibles = document.querySelectorAll('.collapsible');
 
-    impressumToggle.addEventListener('click', function() {
-        const impressum = document.getElementById('impressum');
-        impressum.classList.toggle('collapsed');
+    collapsibles.forEach(function(collapsible) {
+        const header = collapsible.querySelector('h2');
+
+        header.addEventListener('click', function() {
+            const content = collapsible.querySelector('div');
+            content.classList.toggle('collapsed');
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const acceptCookiesButton = document.getElementById('accept-cookies');
+    const cookieBanner = document.getElementById('cookie-banner');
+
+    acceptCookiesButton.addEventListener('click', function() {
+        cookieBanner.style.display = 'none';
     });
 });

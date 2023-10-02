@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <header>
+        <h1>Horoskop-Anzeige</h1>
+    </header>
+
     <label for="sternzeichen">Sternzeichen auswählen:</label>
     <select id="sternzeichen">
         <option value="Wahle dein Sternzeichen">Wähle dein Sternzeichen</option>
@@ -33,9 +38,18 @@
         <label for="dark-mode-checkbox">Dark Mode</label>
         <input type="checkbox" id="dark-mode-checkbox" />
     </div>    
-
+    
+    <div id="cookie-banner">
+        <div id="cookie-content">
+            <h2>Bitte akzeptiere unsere sarkastischen Nutzungsbedingungen!</h2>
+            <p>Durch die Nutzung dieser Website stimmst du zu, dass wir dir alle zukünftigen Lotteriegewinne zusenden werden. Außerdem wirst du automatisch zum König oder zur Königin der Universums ernannt.</p>
+            <button id="accept-cookies">Natürlich, ich akzeptiere!</button>
+            <span id="cookie-emoji">🍪👑</span>
+        </div>
+    </div>
+   
     <footer>
-        <div class="impressum-toggle">
+        <div class="collapsible">
             <h2>Impressum</h2>
             <div id="impressum" class="collapsed">
                 <p>Firma Muster GmbH</p>
@@ -45,6 +59,32 @@
                 <p>E-Mail: info@beispiel.com</p>
             </div>
         </div>
+
+        <div class="collapsible">
+            <h2>Datenschutz</h2>
+            <div id="datenschutz" class="collapsed">
+                <p>Datenschutz ist uns wichtig. Wir verwenden keine Persönlichen Daten, um Ihnen das Horoskop anzuzeigen.</p>
+            </div>
+
+            <div class="collapsible">
+                <h2>Copyright</h2>
+                <div id="copyright" class="collapsed">
+                    <p>Alle Daten sind erfunden oder KI generiert</p>
+                </div>
+
+        <div class="collapsible">
+            <h2>Links</h2>
+            <div id="links" class="collapsed">
+                <ul>
+                    <li><a href="https://www.sternzeichen-horoskop.de/">Sternzeichen-Horoskop.de</a></li>
+                    <li><a href="https://www.horoskop.com/">Horoskop.com</a></li>
+                    <li><a href="https://www.horoskopbox.de/">Horoskopbox.de</a></li>
+                    <li><a href="https://www.horoskop-paradies.ch/">Horoskop-Paradies.ch</a></li>
+                    <li><a href="https://github.com/lfsrrr/">Horoskop.com</a></li>
+                </ul>
+            </div>
+
+    
     </footer>
 
 <script src="app.js"></script>
