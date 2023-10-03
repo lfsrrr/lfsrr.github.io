@@ -28,19 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+const darkModeButton = document.getElementById('darkModeButton');
+const body = document.body;
 
-    darkModeCheckbox.addEventListener('change', function() {
-        toggleDarkMode();
-    });
-});
-
-// Füge diese Funktion in deinen app.js-Code ein
+darkModeButton.addEventListener('click', toggleDarkMode);
 
 function toggleDarkMode() {
-    const body = document.body;
-    body.classList.toggle('dark-mode');
+  body.classList.toggle('dark-mode');
 }
 
 document.addEventListener('DOMContentLoaded', function() {

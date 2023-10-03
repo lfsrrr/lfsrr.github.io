@@ -271,3 +271,32 @@ body.dark-mode #horoskop-container {
     height: 20px;
     border-radius: 50%;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  header.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #darkModeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .moon-emoji {
+    font-size: 20px;
+  }
+  
+  .sun-emoji {
+    font-size: 25px;
+    margin-left: 5px;
+  }
