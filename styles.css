@@ -254,3 +254,20 @@ body.dark-mode #horoskop-container {
     background-color: #5d5858; /* Hintergrundfarbe im Dark Mode für Output */
     color: #fff; /* Schriftfarbe im Dark Mode für Output */
 }
+
+.gluecksfarbe-anzeige {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.gluecksfarbe-anzeige::before {
+    content: "Glücksfarbe: ";
+}
+
+.gluecksfarbe {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

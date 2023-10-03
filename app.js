@@ -64,3 +64,34 @@ document.addEventListener('DOMContentLoaded', function() {
         cookieBanner.style.display = 'none';
     });
 });
+
+// Dein bestehender Code ...
+
+// Funktion, um das Horoskop anzuzeigen
+function zeigeHoroskop(sternzeichen) {
+    // Dein bestehender Code ...
+  
+    // JSON-Objekt (Beispiel)
+    let horoskop = {
+      "Sternzeichen": "Widder",
+      "Prognose": "Du wirst heute voller Energie sein. Nutze diese Kraft, um deine Ziele zu verfolgen.",
+      "Glückszahl": 7,
+      "Glücksfarbe": "#FF0000"
+    };
+  
+    // Extrahiere die Lieblingsfarbe
+    let lieblingsfarbe = horoskop.Glücksfarbe;
+  
+    // Finde das Element, in dem die Lieblingsfarbe angezeigt werden soll
+    let lieblingsfarbeAnzeige = document.getElementById("lieblingsfarbe-anzeige");
+  
+    // Setze den Hintergrund der Anzeige auf die Lieblingsfarbe
+    lieblingsfarbeAnzeige.style.backgroundColor = lieblingsfarbe;
+  
+    // Setze den Textinhalt des Elements auf die Lieblingsfarbe
+    lieblingsfarbeAnzeige.textContent = `Lieblingsfarbe: ${lieblingsfarbe}`;
+  }
+  
+  // Dein bestehender Code ...
+  
+  
