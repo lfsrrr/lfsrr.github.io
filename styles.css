@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* Hintergrundfarbe */
     color: #1a1818; /* Standard-Schriftfarbe */
 }
 
@@ -13,7 +13,7 @@ label, select {
 #horoskop-container {
     max-width: 500px;
     margin: auto;
-    background-color: #fff;
+    background-color: #fff; /* Hintergrundfarbe */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -21,14 +21,14 @@ label, select {
 
 h1 {
     font-size: 1.8em;
-    color: #db1f7d;
+    color: #db1f7d; /* Schriftfarbe */
 }
 
 select {
     font-size: 1em;
     padding: 5px;
-    background-color: #ff69b4;
-    color: #fff;
+    background-color: #ff69b4; /* Hintergrundfarbe */
+    color: #fff; /* Schriftfarbe */
     border: none;
     border-radius: 5px;
 }
@@ -42,13 +42,13 @@ select {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: #fff; /* Hintergrundfarbe */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .horoskop-entry h2 {
     margin-bottom: 5px;
-    color: #ff69b4;
+    color: #ff69b4; /* Schriftfarbe */
 }
 
 .horoskop-entry p {
@@ -58,7 +58,7 @@ select {
 #sternzeichen-titel {
     margin-bottom: 10px;
     font-size: 1.5em;
-    color: #ff69b4;
+    color: #ff69b4; /* Schriftfarbe */
 }
 
 .gluecksfarbe-anzeige {
@@ -74,21 +74,21 @@ select {
 
 /* Darkmode */
 body.dark-mode {
-    background-color: #555;
-    color: #ffffff; /* Weiße Schriftfarbe im Dark Mode */
+    background-color: #555; /* Hintergrundfarbe im Dark Mode */
+    color: #ffffff; /* Schriftfarbe im Dark Mode */
 }
 
 .dark-mode select {
-    background-color: #555;
-    color: #ffffff;
+    background-color: #555; /* Hintergrundfarbe im Dark Mode */
+    color: #ffffff; /* Schriftfarbe im Dark Mode */
 }
 
 .dark-mode .horoskop-entry {
-    border-color: #555;
+    border-color: #555; /* Farbe der Umrandung im Dark Mode */
 }
 
 .dark-mode .gluecksfarbe {
-    border-color: #555;
+    border-color: #555; /* Farbe der Umrandung im Dark Mode */
 }
 
 .dark-mode .gluecksfarbe-anzeige {
@@ -98,13 +98,13 @@ body.dark-mode {
 /* Für das Horoskopfeld im Darkmode */
 #horoscope {
     background-color: #333; /* Hintergrundfarbe für den Darkmode */
-    color: #fff; /* Textfarbe für den Darkmode */
+    color: #fff; /* Schriftfarbe für den Darkmode */
 }
 
 /* Für den Footer im Darkmode */
 footer {
     background-color: #333; /* Hintergrundfarbe für den Darkmode */
-    color: #fff; /* Textfarbe für den Darkmode */
+    color: #fff; /* Schriftfarbe für den Darkmode */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -122,37 +122,27 @@ footer {
 
 /* Stil für den aufgeklappten Zustand */
 #impressum:not(.collapsed) {
-    border-top: 1px solid #ccc;
-    padding: 10px 0;
+    border-top: 10px solid #ccc;
+    padding: 5px 0;
 }
 
 .collapsible {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
+    border-radius: 1px;
+    background-color: #454545; /* Hintergrundfarbe */
 }
 
 .collapsible h2 {
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 20;
     margin: 0;
-    background-color: #f5f5f5;
+    background-color: #5b5b5b; /* Hintergrundfarbe */
     border-bottom: 1px solid #ccc;
 }
 
-/* Cookie-Banner */
-#cookie-banner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Hintergrundfarbe mit Transparenz */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+.collapsible div.collapsed {
+    display: none;
 }
 
 #cookie-content {
@@ -161,6 +151,7 @@ footer {
     text-align: center;
     border-radius: 10px;
     max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #accept-cookies {
@@ -171,75 +162,95 @@ footer {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
-}
-
-#cookie-emoji {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-/* Stelle sicher, dass der Footer am unteren Bildschirmrand klebt */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-body.dark-mode {
-    background-color: #555;
-    color: #ffffff; /* Weiße Schriftfarbe im Dark Mode */
-}
-
-.dark-mode select {
-    background-color: #555;
-    color: #ffffff;
-}
-
-.dark-mode .horoskop-entry {
-    border-color: #555;
-}
-
-.dark-mode .gluecksfarbe {
-    border-color: #555;
-}
-
-.dark-mode .gluecksfarbe-anzeige {
-    color: #ff69b4; /* Farbe für den "Glücksfarbe:"-Text im Dark Mode */
-}
-
-/* Für das Horoskopfeld */
-#horoscope {
-    border-radius: 10px;
-}
-
-/* Für den Footer */
-footer {
-    background-color: #333;
-    color: #1a1818;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.collapsible {
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #fff;
 }
 
-.collapsible h2 {
-    cursor: pointer;
-    padding: 10px;
-    margin: 0;
-    background-color: #ccc;
-    border-bottom: 1px solid #ff69b4;
+#cookie-emoji, #crown-emoji {
+    font-size: 24px;
+    margin: 0 10px;
 }
 
-.collapsible div.collapsed {
+#cookie-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#moon-emoji, #sun-emoji {
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+#dark-mode-checkbox {
     display: none;
 }
 
-.collapsible div {
-    padding: 10px; /* Hier kannst du den Abstand zum Inhalt anpassen */
+#dark-mode-toggle label {
+    cursor: pointer;
+}
+
+/* ... (vorheriger Code bleibt unverändert) ... */
+
+#horoskop-container {
+    max-width: 500px;
+    margin: auto;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#sternzeichen-titel {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #db1f7d;
+}
+
+#horoskop-output {
+    margin-top: 20px;
+    text-align: left; /* Text linksbündig ausrichten */
+}
+
+.horoskop-entry {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #8f3939;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.horoskop-entry h2 {
+    margin-bottom: 5px;
+    color: #ff69b4;
+}
+
+.horoskop-entry p {
+    margin: 0;
+}
+
+/* Für das Horoskopfeld im Darkmode */
+body.dark-mode #horoskop-container {
+    background-color: #5d5858; /* Hintergrundfarbe im Dark Mode */
+    color: #fff; /* Schriftfarbe im Dark Mode */
+}
+
+.dark-mode #horoskop-output {
+    background-color: #5d5858; /* Hintergrundfarbe im Dark Mode für Output */
+    color: #fff; /* Schriftfarbe im Dark Mode für Output */
 }
