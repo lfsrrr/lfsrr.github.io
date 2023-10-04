@@ -1,12 +1,52 @@
 {
-"Monatshoroskope": [
-    {
-        "ID": 1,
-        "Horoskop": "Dies ist das Monatshoroskop für den Widder im Oktober."
-    },
-    {
-        "ID": 2,
-        "Horoskop": "Dies ist das Monatshoroskop für den Stier im Oktober."
-    }
-]
+    "Monatshoroskope": [
+        {
+            "ID": 1,
+            "Horoskop": "Dies ist das Monatshoroskop für den Widder im Januar."
+        },
+        {
+            "ID": 2,
+            "Horoskop": "Dies ist das Monatshoroskop für den Widder im Februar."
+        },
+        {
+            "ID": 3,
+            "Horoskop": "Dies ist das Monatshoroskop für den Widder im März."
+        },
+        {
+            "ID": 4,
+            "Horoskop": "Dies ist das Monatshoroskop für den Widder im April."
+        },
+        {
+            "ID": 5,
+            "Horoskop": "Dies ist das Monatshoroskop für den Widder im Mai."
+        },
+        {
+            "ID": 6,
+            "Horoskop": "Dies ist das Monatshoroskop für die Widder im Juni."
+        },
+        {
+            "ID": 7,
+            "Horoskop": "Dies ist das Monatshoroskop für die Widder im Juli."
+        },
+        {
+            "ID": 8,
+            "Horoskop": "Dies ist das Monatshoroskop für den Widder im August."
+        },
+        {
+            "ID": 9,
+            "Horoskop": "Dies ist das Monatshoroskop für den Widder im September."
+        },
+        {
+            "ID": 10,
+            "Horoskop": "Dies ist das Monatshoroskop für den Widder im Oktober."
+        },
+        {
+            "ID": 11,
+            "Horoskop": "Dies ist das Monatshoroskop für den Widder im November."
+        },
+        {
+            "ID": 12,
+            "Horoskop": "Dies ist das Monatshoroskop für die Widder im Dezember."
+        }
+    ]
 }
