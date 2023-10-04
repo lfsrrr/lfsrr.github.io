@@ -1,0 +1,12 @@
+{
+"Monatshoroskope": [
+    {
+        "ID": 1,
+        "Horoskop": "Dies ist das Monatshoroskop für den Widder im Oktober."
+    },
+    {
+        "ID": 2,
+        "Horoskop": "Dies ist das Monatshoroskop für den Stier im Oktober."
+    }
+]
+}
