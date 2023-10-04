@@ -7,58 +7,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1> Dein Persönliches Horoskop</h1>
+        <h1> Deine Persönliche Angel-Number</h1>
         <button id="darkModeButton">
             <span class="moon-emoji">&#127769;</span>
             <span class="sun-emoji">&#9728;</span>
           </button>
     </header>
 
-    <label for="sternzeichen">Sternzeichen auswählen:</label>
-    <select id="sternzeichen">
-        <option value="Wahle dein Sternzeichen">Wähle dein Sternzeichen</option>
-        <option value="Widder">Widder</option>
-        <option value="Stier">Stier</option>
-        <option value="Zwillinge">Zwillinge</option>
-        <option value="Krebs">Krebs</option>
-        <option value="Löwe">Löwe</option>
-        <option value="Jungfrau">Jungfrau</option>
-        <option value="Waage">Waage</option>
-        <option value="Skorpion">Skorpion</option>
-        <option value="Schütze">Schütze</option>
-        <option value="Steinbock">Steinbock</option>
-        <option value="Wassermann">Wassermann</option>
-        <option value="Fische">Fische</option>
-    </select>
+    <input type="date" id="datepicker" value="2006-06-06" />
+    <button onclick="berechneQuersumme()">Submit</button>
+    <div id="output"></div>
 
-    <div id="horoskop-container">
-        <h1 id="sternzeichen-titel"></h1>
-        <div id="horoskop-output"></div>
-    </div>
-    
-    <div id="monatshoroskop-container">
-        <button id="zeige-monatshoroskop">Zeige Monatshoroskop</button>
-        <div id="monatshoroskop-output"></div>
-    </div>
+    <script>
+        function berechneQuersumme() {
+            const datepicker = document.getElementById('datepicker');
+            const dateValue = datepicker.value;
 
-    <div id="angel-number">
-        <h1 id="Berechne Angel-Number"></h1>
-        <a href="angel.html">zum Angel-Number-Rechner</a>
+            // Entferne die Trennzeichen (-) im Datum
+            const dateWithoutDashes = dateValue.split('-').join('');
 
-    </div>
-    
+            // Berechne die Quersumme
+            let quersumme = 0;
+            for (let i = 0; i < dateWithoutDashes.length; i++) {
+                quersumme += parseInt(dateWithoutDashes[i]);
+            }
 
-    <div id="cookie-banner">
-        <div id="cookie-content">
-            <h2>Bitte akzeptiere unsere sarkastischen Nutzungsbedingungen!</h2>
-            <p>Durch die Nutzung dieser Website stimmst du zu, dass du uns alle zukünftigen Lotteriegewinne zusenden werden. Außerdem wirst du automatisch zum König oder zur Königin der Universums ernannt. Dein erstgeborenes Kind geht automatisch in meinen Besitz! </p>
-            <button id="accept-cookies">Natürlich, ich akzeptiere!</button>
-            <span id="cookie-emoji">🍪👑</span>
-        </div>
-    </div>
-   
+            if (quersumme >= 10) {
+                return berechneQuersumme(quersumme);
+            }
+
+            const output = document.getElementById('output');
+            output.innerHTML = `Die Quersumme des eingegebenen Datums ist: ${quersumme}`;
+        }
+    </script>
+
     <footer>
 
         <div class="collapsible">
