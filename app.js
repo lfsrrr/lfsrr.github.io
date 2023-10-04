@@ -1,31 +1,45 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const sternzeichenSelect = document.getElementById('sternzeichen');
-    const horoskopContainer = document.getElementById('horoskop-output');
-    const sternzeichenTitel = document.getElementById('sternzeichen-titel');
+    try {
+        const sternzeichenSelect = document.getElementById('sternzeichen');
+        const horoskopContainer = document.getElementById('horoskop-output');
+        const sternzeichenTitel = document.getElementById('sternzeichen-titel');
 
+        sternzeichenSelect.addEventListener('change', function() {
+            const ausgewaehltesSternzeichen = this.value;
 
-    sternzeichenSelect.addEventListener('change', function() {
-        const ausgewaehltesSternzeichen = this.value;
+            fetch('horoskope.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const horoskop = data.Horoskope.find(h => h.Sternzeichen === ausgewaehltesSternzeichen);
 
-        fetch('horoskope.json')
-            .then(response => response.json())
-            .then(data => {
-                const horoskop = data.Horoskope.find(h => h.Sternzeichen === ausgewaehltesSternzeichen);
+                    if (horoskop) {
+                        sternzeichenTitel.textContent = horoskop.Sternzeichen;
 
-                if (horoskop) {
-                    sternzeichenTitel.textContent = horoskop.Sternzeichen;
+                        horoskopContainer.innerHTML = `
+                            <p><strong>Prognose:</strong> ${horoskop.Prognose}</p>
+                            <p><strong>Glückszahl:</strong> ${horoskop.Glückszahl}</p>
+                            <p><strong>Glücksfarbe:</strong> <span class="gluecksfarbe" style="background-color:${horoskop.Glücksfarbe};"></span></p>
+                        `;
+                    } else {
+                        sternzeichenTitel.textContent = "Horoskop nicht gefunden";
+                        horoskopContainer.innerHTML = "";
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        });
 
-                    horoskopContainer.innerHTML = `
-                        <p><strong>Prognose:</strong> ${horoskop.Prognose}</p>
-                        <p><strong>Glückszahl:</strong> ${horoskop.Glückszahl}</p>
-                        <p><strong>Glücksfarbe:</strong> <span class="gluecksfarbe" style="background-color:${horoskop.Glücksfarbe};"></span></p>
-                    `;
-                } else {
-                    sternzeichenTitel.textContent = "Horoskop nicht gefunden";
-                    horoskopContainer.innerHTML = "";
-                }
-            });
-    });
+        // Dein restlicher Code hier...
+
+    } catch (error) {
+        console.error('Error in document.addEventListener:', error);
+    }
 });
 
 const darkModeButton = document.getElementById('darkModeButton');

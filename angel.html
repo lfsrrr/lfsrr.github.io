@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <h1> Deine Persönliche Angel-Number</h1>
         <button id="darkModeButton">
@@ -18,30 +19,30 @@
     <input type="date" id="datepicker" value="2006-06-06" />
     <button onclick="berechneQuersumme()">Submit</button>
     <div id="output"></div>
+    
 
-    <script>
-        function berechneQuersumme() {
-            const datepicker = document.getElementById('datepicker');
-            const dateValue = datepicker.value;
+    <div id="cookie-banner">
+        <div id="cookie-content">
+            <h2>Bitte akzeptiere unsere sarkastischen Nutzungsbedingungen!</h2>
+            <p>Durch die Nutzung dieser Website stimmst du zu, dass du uns alle zukünftigen Lotteriegewinne zusenden werden. Außerdem wirst du automatisch zum König oder zur Königin der Universums ernannt. Dein erstgeborenes Kind geht automatisch in meinen Besitz! </p>
+            <button id="accept-cookies">Natürlich, ich akzeptiere!</button>
+            <span id="cookie-emoji">🍪👑</span>
+        </div>
+    </div>
 
-            // Entferne die Trennzeichen (-) im Datum
-            const dateWithoutDashes = dateValue.split('-').join('');
-
-            // Berechne die Quersumme
-            let quersumme = 0;
-            for (let i = 0; i < dateWithoutDashes.length; i++) {
-                quersumme += parseInt(dateWithoutDashes[i]);
-            }
-
-            if (quersumme >= 10) {
-                return berechneQuersumme(quersumme);
-            }
-
-            const output = document.getElementById('output');
-            output.innerHTML = `Die Quersumme des eingegebenen Datums ist: ${quersumme}`;
-        }
-    </script>
-
+    <select id="sternzeichen">
+        <!-- Optionen hier einfügen -->
+    </select>
+    
+    <div id="horoskop-output">
+        <!-- Inhalte hier einfügen -->
+    </div>
+    
+    <div id="sternzeichen-titel">
+        <!-- Titel hier einfügen -->
+    </div>
+    
+   
     <footer>
 
         <div class="collapsible">
