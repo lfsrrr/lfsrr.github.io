@@ -42,7 +42,29 @@
         <!-- Titel hier einfügen -->
     </div>
     
-   
+   <script>
+        function berechneQuersumme() {
+        const datepicker = document.getElementById('datepicker');
+        const dateValue = datepicker.value;
+
+        // Entferne die Trennzeichen (-) im Datum
+        const dateWithoutDashes = dateValue.split('-').join('');
+
+        // Berechne die Quersumme
+        let quersumme = 0;
+        for (let i = 0; i < dateWithoutDashes.length; i++) {
+            quersumme += parseInt(dateWithoutDashes[i]);
+        }
+
+        if (quersumme >= 10) {
+            return berechneQuersumme(quersumme);
+        }
+
+        const output = document.getElementById('output');
+        output.innerHTML = `Die Quersumme des eingegebenen Datums ist: ${quersumme}`;
+        }
+   </script>
+
     <footer>
 
         <div class="collapsible">
