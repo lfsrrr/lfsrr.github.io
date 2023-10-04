@@ -85,15 +85,5 @@ function zeigeHoroskop(sternzeichen) {
     // Setze den Textinhalt des Elements auf die Lieblingsfarbe
     lieblingsfarbeAnzeige.textContent = `Lieblingsfarbe: ${lieblingsfarbe}`;
   }
-  
-  document.getElementById('zeige-monatshoroskop').addEventListener('click', function() {
-    const monatshoroskop = {
-        "ID": 1,
-        "Horoskop": "Dies ist das Monatshoroskop für den Widder im Oktober."
-    };
-
-    document.getElementById('monatshoroskop-output').innerText = monatshoroskop.Horoskop;
-    document.getElementById('monatshoroskop-output').style.display = 'block';
-});
-  
+   
   

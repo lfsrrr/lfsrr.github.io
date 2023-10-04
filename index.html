@@ -43,39 +43,6 @@
         <div id="monatshoroskop-output"></div>
     </div>
     
-    <script>
-        function zeigeMonatshoroskop(sternzeichen) {
-    const monatshoroskopID = (new Date().getMonth() * 12) + sternzeichen.ID; // ID für den aktuellen Monat und ausgewähltes Sternzeichen
-
-    const monatshoroskop = monatshoroskope.find(eintrag => eintrag.ID === monatshoroskopID);
-
-    if (monatshoroskop) {
-        document.getElementById('monatshoroskop-output').innerHTML = `
-            <div class="horoskop-entry">
-                <h2>Monatshoroskop</h2>
-                <p>${monatshoroskop.Horoskop}</p>
-            </div>
-        `;
-        document.getElementById('monatshoroskop-output').style.display = 'block';
-    } else {
-        document.getElementById('monatshoroskop-output').innerHTML = 'Kein Monatshoroskop gefunden';
-        document.getElementById('monatshoroskop-output').style.display = 'block';
-    }
-}
-
-document.getElementById('zeige-monatshoroskop').addEventListener('click', function() {
-    const ausgewaehltesSternzeichen = document.getElementById('sternzeichen').value;
-    const fürSternzeichen = monatshoroskope.find(eintrag => eintrag.Sternzeichen === ausgewaehltesSternzeichen);
-
-    if (fürSternzeichen) {
-        zeigeMonatshoroskop(fürSternzeichen);
-    } else {
-        document.getElementById('monatshoroskop-output').innerHTML = 'Kein Sternzeichen ausgewählt';
-        document.getElementById('monatshoroskop-output').style.display = 'block';
-    }
-});
-
-    </script>
 
     <div id="cookie-banner">
         <div id="cookie-content">
