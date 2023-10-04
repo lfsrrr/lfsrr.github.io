@@ -38,7 +38,7 @@
         },
         {
             "ID": 10,
-            "Horoskop": "Dies ist das Monatshoroskop für den Widder im Oktober."
+            "Horoskop": "Dies ist das Monatshoroskop für den Widder im Test."
         },
         {
             "ID": 11,
@@ -47,6 +47,54 @@
         {
             "ID": 12,
             "Horoskop": "Dies ist das Monatshoroskop für die Widder im Dezember."
+        },
+        {
+            "ID": 13,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im Januar."
+        },
+        {
+            "ID": 14,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im Februar."
+        },
+        {
+            "ID": 15,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im März."
+        },
+        {
+            "ID": 16,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im April."
+        },
+        {
+            "ID": 17,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im Mai."
+        },
+        {
+            "ID": 18,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im Juni."
+        },
+        {
+            "ID": 19,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im Juli."
+        },
+        {
+            "ID": 20,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im August."
+        },
+        {
+            "ID": 21,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im September."
+        },
+        {
+            "ID": 22,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im Oktober."
+        },
+        {
+            "ID": 23,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im November."
+        },
+        {
+            "ID": 24,
+            "Horoskop": "Dies ist das Monatshoroskop für den Stier im Dezember."
         }
     ]
 }

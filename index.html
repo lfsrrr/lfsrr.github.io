@@ -44,28 +44,37 @@
     </div>
     
     <script>
-        sternzeichenSelect.addEventListener('change', function() {
-            const ausgewaehltesSternzeichen = this.value;
+        function zeigeMonatshoroskop(sternzeichen) {
+    const monatshoroskopID = (new Date().getMonth() * 12) + sternzeichen.ID; // ID für den aktuellen Monat und ausgewähltes Sternzeichen
 
-            fetch('horoskope.json')
-                .then(response => response.json())
-                .then(data => {
-                    const horoskop = data.Horoskope.find(h => h.Sternzeichen === ausgewaehltesSternzeichen);
+    const monatshoroskop = monatshoroskope.find(eintrag => eintrag.ID === monatshoroskopID);
 
-                    if (horoskop) {
-                        sternzeichenTitel.textContent = horoskop.Sternzeichen;
+    if (monatshoroskop) {
+        document.getElementById('monatshoroskop-output').innerHTML = `
+            <div class="horoskop-entry">
+                <h2>Monatshoroskop</h2>
+                <p>${monatshoroskop.Horoskop}</p>
+            </div>
+        `;
+        document.getElementById('monatshoroskop-output').style.display = 'block';
+    } else {
+        document.getElementById('monatshoroskop-output').innerHTML = 'Kein Monatshoroskop gefunden';
+        document.getElementById('monatshoroskop-output').style.display = 'block';
+    }
+}
 
-                        horoskopContainer.innerHTML = `
-                            <p><strong>Prognose:</strong> ${horoskop.Prognose}</p>
-                            <p><strong>Glückszahl:</strong> ${horoskop.Glückszahl}</p>
-                            <p><strong>Glücksfarbe:</strong> <span class="gluecksfarbe" style="background-color:${horoskop.Glücksfarbe};"></span></p>
-                        `;
-                    } else {
-                        sternzeichenTitel.textContent = "Horoskop nicht gefunden";
-                        horoskopContainer.innerHTML = "";
-                    }
-                });
-        });
+document.getElementById('zeige-monatshoroskop').addEventListener('click', function() {
+    const ausgewaehltesSternzeichen = document.getElementById('sternzeichen').value;
+    const fürSternzeichen = monatshoroskope.find(eintrag => eintrag.Sternzeichen === ausgewaehltesSternzeichen);
+
+    if (fürSternzeichen) {
+        zeigeMonatshoroskop(fürSternzeichen);
+    } else {
+        document.getElementById('monatshoroskop-output').innerHTML = 'Kein Sternzeichen ausgewählt';
+        document.getElementById('monatshoroskop-output').style.display = 'block';
+    }
+});
+
     </script>
 
     <div id="cookie-banner">
