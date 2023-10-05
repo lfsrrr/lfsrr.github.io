@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
         });
 
-        function berechneQuersumme(quersumme = null) {
+        function berechneQuersumme(event) {
+            event.preventDefault();
             const datepicker = document.getElementById('datepicker');
             const dateValue = datepicker.value;
         
@@ -43,15 +44,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const dateWithoutDashes = dateValue.split('-').join('');
         
             // Berechne die Quersumme
-            quersumme = quersumme || dateWithoutDashes.split('').reduce((acc, digit) => acc + parseInt(digit), 0);
-        
-            if (quersumme >= 10) {
-                return berechneQuersumme(quersumme);
-            }
+            const quersumme = dateWithoutDashes.split('').reduce((acc, digit) => acc + parseInt(digit), 0);
         
             const output = document.getElementById('output');
             output.innerHTML = `Die Quersumme des eingegebenen Datums ist: ${quersumme}`;
         }
+        
         
 
         const darkModeButton = document.getElementById('darkModeButton');
