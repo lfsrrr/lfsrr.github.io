@@ -47,36 +47,29 @@ document.addEventListener('DOMContentLoaded', function() {
             const quersumme = dateWithoutDashes.split('').reduce((acc, digit) => acc + parseInt(digit), 0);
         
             const output = document.getElementById('output');
-            output.innerHTML = `Die Quersumme des eingegebenen Datums ist: ${quersumme}`;
+            output.innerHTML = `Die Engelszahl des eingegebenen Datums ist: ${quersumme}`;
         }
         
-        
-
         const darkModeButton = document.getElementById('darkModeButton');
         const body = document.body;
-
-        // ... (bisheriger Code)
 
         // Event-Listener für den Submit-Button
         const submitButton = document.getElementById('submit-button');
         submitButton.addEventListener('click', berechneQuersumme);
-
-        // ... (weiterer Code)
-
 
     } catch (error) {
         console.error('Error in document.addEventListener:', error);
     }
 });
 
-const darkModeButton = document.getElementById('darkModeButton');
-const body = document.body;
+	const darkModeButton = document.getElementById('darkModeButton');
+	const body = document.body;
 
-darkModeButton.addEventListener('click', toggleDarkMode);
+	darkModeButton.addEventListener('click', toggleDarkMode);
 
-function toggleDarkMode() {
-  body.classList.toggle('dark-mode');
-}
+	function toggleDarkMode() {
+ 		 body.classList.toggle('dark-mode');
+	}
 
 document.addEventListener('DOMContentLoaded', function() {
     const collapsibles = document.querySelectorAll('.collapsible');
@@ -99,8 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
         cookieBanner.style.display = 'none';
     });
 });
-
-// Dein bestehender Code ...
 
 // Funktion, um das Horoskop anzuzeigen
 function zeigeHoroskop(sternzeichen) {
