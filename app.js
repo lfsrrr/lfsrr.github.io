@@ -50,9 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
             output.innerHTML = `Die Engelszahl des eingegebenen Datums ist: ${quersumme}`;
         }
         
-        const darkModeButton = document.getElementById('darkModeButton');
-        const body = document.body;
-
         // Event-Listener für den Submit-Button
         const submitButton = document.getElementById('submit-button');
         submitButton.addEventListener('click', berechneQuersumme);

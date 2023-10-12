@@ -78,6 +78,11 @@ body.dark-mode {
     color: #ffffff; /* Schriftfarbe im Dark Mode */
 }
 
+header.dark-mode {
+    background-color: #cd1212; /* Hintergrundfarbe im Dark Mode */
+    color: #0dfc44; /* Schriftfarbe im Dark Mode */
+}
+
 .dark-mode select {
     background-color: #555; /* Hintergrundfarbe im Dark Mode */
     color: #ffffff; /* Schriftfarbe im Dark Mode */
@@ -279,10 +284,10 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  header.dark-mode {
-    background-color: #333;
+  .dark-mode header {
+    background-color: #5d5858;
     color: #fff;
-  }
+}
   
   #darkModeButton {
     background-color: transparent;
@@ -347,3 +352,4 @@ body.dark-mode #output {
 .dark-mode #horoskop-output {
     background-color: #5d5858; /* Hintergrundfarbe im Dark Mode für Output */
     color: #fff; /* Schriftfarbe im Dark Mode für Output */
+}
