@@ -195,6 +195,11 @@ footer {
     z-index: 9999;
 }
 
+#cookie-content h3 {
+    font-size: 10px; /* Hier kannst du die Schriftgröße anpassen */
+}
+
+
 #dark-mode-toggle {
     position: absolute;
     top: 10px;
