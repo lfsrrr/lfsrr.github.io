@@ -106,10 +106,17 @@ header.dark-mode {
     color: #fff; /* Schriftfarbe für den Darkmode */
 }
 
-/* Für den Footer im Darkmode */
-footer {
+.dark-mode footer {
     background-color: #333; /* Hintergrundfarbe für den Darkmode */
     color: #fff; /* Schriftfarbe für den Darkmode */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: #f5f5f5; /* Hintergrundfarbe */
+    color: #1a1818; /* Standard-Schriftfarbe */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -133,17 +140,17 @@ footer {
 
 .collapsible {
     margin-bottom: 1px;
-    border: 1px solid #ccc;
+    border: 1px solid #b0b0b0;
     border-radius: 1px;
-    background-color: #454545; /* Hintergrundfarbe */
+    background-color: #ccc; /* Hintergrundfarbe */
 }
 
 .collapsible h2 {
     cursor: pointer;
     padding: 10px 20;
     margin: 0;
-    background-color: #5b5b5b; /* Hintergrundfarbe */
-    border-bottom: 1px solid #ccc;
+    background-color: #ccc; /* Hintergrundfarbe */
+    border-bottom: 1px solid #b0b0b0;
 }
 
 .collapsible div.collapsed {
@@ -216,12 +223,6 @@ footer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#sternzeichen-titel {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    color: #db1f7d;
 }
 
 #horoskop-output {
@@ -353,3 +354,38 @@ body.dark-mode #output {
     background-color: #5d5858; /* Hintergrundfarbe im Dark Mode für Output */
     color: #fff; /* Schriftfarbe im Dark Mode für Output */
 }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+input[type="date"] {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #ff69b4; /* Schriftfarbe */
+}
+
