@@ -72,6 +72,12 @@ select {
     content: "Glücksfarbe: ";
 }
 
+.gluecksfarbe {
+    display: flex;
+    align-items: center;
+}
+
+
 /* Darkmode */
 body.dark-mode {
     background-color: #555; /* Hintergrundfarbe im Dark Mode */
