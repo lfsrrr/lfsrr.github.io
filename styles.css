@@ -391,3 +391,9 @@ button:hover {
     color: #ff69b4; /* Schriftfarbe */
 }
 
+#Tages-Horoskop {
+    border: 2px solid #ccc; /* Farbe und Breite des Rahmens */
+    padding: 10px; /* Innenabstand */
+    border-radius: 10px; /* Abrundung der Ecken */
+}
+

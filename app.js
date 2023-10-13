@@ -59,6 +59,45 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    try {
+        const tageshoroskopContainer = document.getElementById('Tages-Horoskop-output');
+        const sternzeichenSelect = document.getElementById('sternzeichen');
+
+        sternzeichenSelect.addEventListener('change', function() {
+            const ausgewaehltesSternzeichen = this.value;
+
+            fetch('tageshoroskop.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const tageshoroskop = data.tageshoroskop.find(h => h.Sternzeichen === ausgewaehltesSternzeichen);
+
+                    if (tageshoroskop) {
+                        tageshoroskopContainer.innerHTML = `
+                            <h2>${tageshoroskop.Sternzeichen}</h2>
+                            <p><strong>Prognose:</strong> ${tageshoroskop.Prognose}</p>
+                        `;
+                    } else {
+                        tageshoroskopContainer.innerHTML = "<p>Horoskop nicht gefunden</p>";
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        });
+
+    } catch (error) {
+        console.error('Error in document.addEventListener:', error);
+    }
+});
+
+
+
 	const darkModeButton = document.getElementById('darkModeButton');
 	const body = document.body;
 
