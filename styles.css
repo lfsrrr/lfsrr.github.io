@@ -10,15 +10,6 @@ label, select {
     font-size: 1em;
 }
 
-#horoskop-container {
-    max-width: 500px;
-    margin: auto;
-    background-color: #fff; /* Hintergrundfarbe */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 h1 {
     font-size: 1.8em;
     color: #db1f7d; /* Schriftfarbe */
@@ -350,7 +341,7 @@ header {
 #output {
     max-width: 500px;
     margin: auto;
-    background-color: #fff; /* Hintergrundfarbe */
+    background-color: #ccc; /* Hintergrundfarbe */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
