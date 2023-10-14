@@ -395,5 +395,20 @@ button:hover {
     border: 2px solid #ccc; /* Farbe und Breite des Rahmens */
     padding: 10px; /* Innenabstand */
     border-radius: 10px; /* Abrundung der Ecken */
+    max-width: 500px;
+    margin: auto;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.output{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff; /* Hintergrundfarbe */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
