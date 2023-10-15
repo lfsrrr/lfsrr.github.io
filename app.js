@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     if (tageshoroskop) {
                         tageshoroskopContainer.innerHTML = `
-                            <h2>${tageshoroskop.Sternzeichen}</h2>
+                            <h1>${tageshoroskop.Sternzeichen}</h1>
                             <p><strong>Prognose:</strong> ${tageshoroskop.Prognose}</p>
                         `;
                     } else {
