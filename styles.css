@@ -417,3 +417,12 @@ button:hover {
     font-size: 1.5em;
     color: #ff69b4; /* Schriftfarbe */
 }
+
+#submit-button {
+    font-size: 1em;
+    padding: 5px;
+    background-color: #ff69b4; /* Hintergrundfarbe */
+    color: #fff; /* Schriftfarbe */
+    border: none;
+    border-radius: 5px;
+}
