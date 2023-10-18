@@ -153,5 +153,45 @@ function zeigeHoroskop(sternzeichen) {
     // Setze den Textinhalt des Elements auf die Lieblingsfarbe
     lieblingsfarbeAnzeige.textContent = `Lieblingsfarbe: ${lieblingsfarbe}`;
   }
-   
-  
+
+  document.addEventListener('DOMContentLoaded', function() {
+    try {
+        const aszendentSelect = document.getElementById('Aszendent');
+        const aszendentContainer = document.getElementById('aszendent-info');
+        const aszendentTitel = document.getElementById('aszendent-titel');
+
+        aszendentSelect.addEventListener('change', function() {
+            const ausgewaehlterAszendent = this.value;
+
+            fetch('aszendenten.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const aszendentInfo = data.aszendenten.find(a => a.Name === ausgewaehlterAszendent);
+
+                    if (aszendentInfo) {
+                        aszendentTitel.textContent = aszendentInfo.Name;
+
+                        aszendentContainer.innerHTML = `
+                            <p><strong>Beschreibung:</strong> ${aszendentInfo.Eigenschaften}</p>
+                            <p><strong>Element:</strong> ${aszendentInfo.Element}</p>
+                            <p><strong>Herrscherplanet:</strong> ${aszendentInfo.Herrscherplanet}</p>
+                        `;
+                    } else {
+                        aszendentTitel.textContent = "Aszendent nicht gefunden";
+                        aszendentContainer.innerHTML = "";
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        });
+
+    } catch (error) {
+        console.error('Error in document.addEventListener:', error);
+    }
+});

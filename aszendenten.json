@@ -1,0 +1,82 @@
+{
+    "aszendenten": [
+        {
+            "Name": "Widder",
+            "Eigenschaften": "mutig, dynamisch, aktiv",
+            "Element": "Feuer",
+            "Herrscherplanet": "Mars"
+        },
+        {
+            "Name": "Stier",
+            "Eigenschaften": "beständig, geduldig, sinnlich",
+            "Element": "Erde",
+            "Herrscherplanet": "Venus"
+        },
+        {
+            "Name": "Zwillinge",
+            "Eigenschaften": "kommunikativ, flexibel, wissbegierig",
+            "Element": "Luft",
+            "Herrscherplanet": "Merkur"
+        },
+        {
+            "Name": "Krebs",
+            "Eigenschaften": "fürsorglich, emotional, intuitiv",
+            "Element": "Wasser",
+            "Herrscherplanet": "Mond"
+        },
+        {
+            "Name": "Löwe",
+            "Eigenschaften": "stolz, großzügig, selbstbewusst",
+            "Element": "Feuer",
+            "Herrscherplanet": "Sonne"
+        },
+        {
+            "Name": "Jungfrau",
+            "Eigenschaften": "analytisch, praktisch, zuverlässig",
+            "Element": "Erde",
+            "Herrscherplanet": "Merkur"
+        },
+        {
+            "Name": "Waage",
+            "Eigenschaften": "ausgewogen, charmant, diplomatisch",
+            "Element": "Luft",
+            "Herrscherplanet": "Venus"
+        },
+        {
+            "Name": "Skorpion",
+            "Eigenschaften": "leidenschaftlich, entschlossen, geheimnisvoll",
+            "Element": "Wasser",
+            "Herrscherplanet": "Pluto"
+        },
+        {
+            "Name": "Schütze",
+            "Eigenschaften": "optimistisch, abenteuerlustig, philosophisch",
+            "Element": "Feuer",
+            "Herrscherplanet": "Jupiter"
+        },
+        {
+            "Name": "Steinbock",
+            "Eigenschaften": "zielstrebig, diszipliniert, verantwortungsbewusst",
+            "Element": "Erde",
+            "Herrscherplanet": "Saturn"
+        },
+        {
+            "Name": "Wassermann",
+            "Eigenschaften": "freundlich, unabhängig, innovativ",
+            "Element": "Luft",
+            "Herrscherplanet": "Uranus"
+        },
+        {
+            "Name": "Fische",
+            "Eigenschaften": "mitfühlend, kreativ, sensibel",
+            "Element": "Wasser",
+            "Herrscherplanet": "Neptun"
+        },
+        {
+            "Name": "Bitch",
+            "Eigenschaften": "fabelhaft, unbesiegbar, legendär",
+            "Element": "Feuer",
+            "Herrscherplanet": "Venus"
+        }
+    ]
+}
