@@ -3,6 +3,7 @@ body {
     text-align: center;
     background-color: #f5f5f5; /* Hintergrundfarbe */
     color: #1a1818; /* Standard-Schriftfarbe */
+    margin-bottom: 1px;
 }
 
 label, select {
@@ -111,7 +112,7 @@ header.dark-mode {
     width: 100%;
 }
 
-footer {
+#footer {
     background-color: #f5f5f5; /* Hintergrundfarbe */
     color: #1a1818; /* Standard-Schriftfarbe */
     position: fixed;
